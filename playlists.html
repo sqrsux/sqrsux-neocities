@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>sqr's playlists</title>
+<link rel="stylesheet" href="style.css">
+
+<style> 
+  /* MENU — UMA LINHA, BOTÕES MAIORES */
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: nowrap; /* NÃO quebra linha */
+  }
+
+  .menu a {
+    flex: 0 0 auto;
+  }
+
+  .menu img {
+    height: 44px; /* botões maiores */
+  }
+
+  /* PLAYLISTS */
+  .playlist-section {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap; /* playlists PODEM quebrar linha */
+  }
+</style>
+
+</head>
+
+<body>
+<div class="container">
+
+  <div class="page-title">
+    <img src="titles/t-playlists.png" alt="sqr's playlists">
+  </div>
+
+  <!-- MENU -->
+  <div class="menu">
+    <a href="home.html"><img src="button/btn-casa.png"></a>
+    <a href="desenhos.html"><img src="button/btn-desenho.png"></a>
+    <a href="textos.html"><img src="button/btn-texto.png"></a>
+    <a href="books.html"><img src="button/btn-leituras.png"></a>
+    <a href="redes.html"><img src="button/btn-redes.png"></a>
+    <a href="about.html"><img src="button/btn-sobre.png"></a>
+  </div>
+
+  <div class="playlist-section">
+    <a href="https://open.spotify.com/playlist/29Zhya0vf5KOcxYdTfSOfd?si=41f5aac66d344c8a">
+      <img src="capas/playlistmain.png" alt="19 17 18" style="width:110px; height:110px;">
+    </a>
+
+    <a href="https://open.spotify.com/playlist/1hVe8TDMwYCMvase9OreSs?si=1b2c7d8a778a499c">
+      <img src="capas/playlistsad.png" alt="sad songs" style="width:110px; height:110px;">
+    </a>
+
+    <a href="https://open.spotify.com/playlist/2TyG9ZNlSZkwWHokEu6GS4?si=0f638ff78f284ab9">
+      <img src="capas/playlisthappy.png" alt="happy songs" style="width:110px; height:110px;">
+    </a>
+
+    <a href="https://open.spotify.com/playlist/2XpVhmYcyC9GSfIgOrzsco?si=4a0dcc5a7e044133">
+      <img src="capas/playlisthouse.png" alt="house etc." style="width:110px; height:110px;">
+    </a>
+
+    <a href="https://open.spotify.com/playlist/5ZfIWeGyAPBqBR5sFCWjcA?si=2fd4115d245a4ded">
+      <img src="capas/playlistska.png" alt="ska etc." style="width:110px; height:110px;">
+    </a>
+  </div>
+
+  <div class="footer-gif">
+    <img src="gifs/skaguy.gif" width="85">
+  </div>
+
+</div>
+</body>
+</html>

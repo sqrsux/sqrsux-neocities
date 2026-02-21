@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>sqr's drawings</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* MENU — UMA LINHA, BOTÕES MAIORES */
+    .menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: nowrap; /* NÃO quebra linha */
+    }
+
+    .menu a {
+      flex: 0 0 auto;
+    }
+
+    .menu img {
+      height: 44px; /* botões maiores */
+    }
+
+    /* GALERIA EM 2 COLUNAS */
+    .desenhos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .desenhos img {
+      width: 300px;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- TÍTULO COMO IMAGEM -->
+    <div class="page-title">
+      <img src="titles/t-desenhos.png" alt="sqr's drawings">
+    </div>
+
+    <!-- MENU -->
+    <div class="menu">
+      <a href="home.html"><img src="button/btn-casa.png"></a>
+      <a href="textos.html"><img src="button/btn-texto.png"></a>
+      <a href="books.html"><img src="button/btn-leituras.png"></a>
+      <a href="playlists.html"><img src="button/btn-musicas.png"></a>
+      <a href="redes.html"><img src="button/btn-redes.png"></a>
+      <a href="about.html"><img src="button/btn-sobre.png"></a>
+    </div>
+    
+    <!--LEMBRE DE FORMATAR A IMAGEM EM 4 POR 3 E COMPRESSÁ-LÁ!-->
+    <!--TEXTOS VÃO DIRETAMENTE APÓS A IMAGEM!-->
+
+    <div class="desenhos">
+      <img src="desenhos/braains.png">
+      <p>braains. (12/2025) <br> 
+      simplesmente um zumbi. fiz como teste para o caderno e para meus lápis.</p>
+      
+      <img src="desenhos/gotmilk.png">
+      <p>got milk? (01/2026)<br>
+      inspirado num antigo infomercial americano influenciando as crianças à tomarem leite, mostrando geralmente um personagem ficando forte, exatamente como eu fiz.</p>
+      
+      <img src="desenhos/pieropiccioni.png">
+      <p>piero piccioni. (11/2025)<br>
+      retrato estilizado do maestro italiano piero piccioni, falecido em 2004, que fez inúmeras soundtracks para filmes dos anos 70, muitas das quais eu amo muito. a minha preferida dele é "mexican dream", de 1970. acredito que esta foto (agora desenho) dele retrata perfeitamente a exaustão que existe na criatividade.</p>
+      
+      <img src="desenhos/sqrcuspe.png">
+      <p>sqrcuspe. (01/2026)<br>
+      outro teste pro caderno e treino de anatomia, sendo uma paródia dum desenho do bob cuspe, do agora aposentado cartunista angeli, que trabalhou com A laerte e inúmeros outros na revista chiclete com banana. descanse angeli, você merece! também inclui uma tirada pro nikolas ferreira, pois genuinamente quero ele morto.</p>
+      
+      <img src="desenhos/sqrfreeman.png">
+      <p>sqrfreeman. (01/2026)<br>
+      paródia de uma artwork de uma das minhas franquias favoritas, half-life. "unforeseen consequences" é o nome do primeiro capítulo do primeiro jogo.</p>
+
+      <img src="desenhos/sqrportrait.png">
+      <p>sqrportrait. (01/2026)<br>
+      autorretrato.</p>
+      
+      <img src="desenhos/sqrsideprofile.png">
+      <p>sqrsideprofile. (01/2026)<br>
+      desenho rápido para treino de perfil.</p>
+      
+      <img src="desenhos/srwilsonbysqr.jpg">
+      <p>srwilsonbysqr. (01/2026)<br>
+      desenho do sr. wilson do colônia contra ataca, canal do youtube do qual eu assisto desde 2015 e cara do qual eu admiro muito.</p>
+       
+      <img src="desenhos/cutesqrbase.jpg">
+      <p>cutesqr. (01/2026)<br>
+      desenho bobinho da aba about, que agora é mini animado (dá uma olhada!)</p>
+        
+      <img src="desenhos/sqrsmind.jpg">
+      <p>sqr's mind. (01/2026)<br>
+      ilustrando os emaranhados de fios da minha mente...</p>
+      
+      <img src="desenhos/cariño.jpg">
+      <p>cariño. (01/2026)<br>
+      desenho estilo pin-up que fiz de estudo pra anatomia feminina.</p>
+      
+     <img src="desenhos/kaboom.jpg">
+      <p>kaboom. (02/2026)<br>
+       desenho pra ver se eu tinha perdido o jeito.</p>
+       
+      <img src="desenhos/thedualityofsqr.jpg">
+      <p>the duality of sqr. (02/2026)<br>
+       os dois sqrs que viveram este ano.</p>
+    </div>
+
+  </div>
+</body>
+</html>

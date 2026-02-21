@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>sqr's portfolio</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* ================= CONTAINER ================= */
+
+.container {
+  position: relative;
+  padding: 20px;
+}
+
+/* ================= MENU ================= */
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: nowrap;
+}
+
+.menu img {
+  height: 44px;
+  max-width: 100%;
+}
+
+/* ================= TEXTO ================= */
+
+p {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+/* ================= POST-ITS ================= */
+
+.postit,
+.postit-left {
+  position: absolute;
+  z-index: 0;
+}
+
+.postit {
+  right: -40px;
+  bottom: -20px;
+}
+
+.postit-left {
+  left: -60px;
+  bottom: -30px;
+}
+
+.postit img,
+.postit-left img {
+  width: 300px;
+  filter: drop-shadow(2px 3px 3px rgba(0,0,0,0.2));
+}
+
+.postit img { transform: rotate(-6deg); }
+.postit-left img { transform: rotate(6deg); }
+
+/* ================= GIF CENTRAL ================= */
+
+.center-gif {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.center-gif img {
+  width: 150px;
+  display: block;
+}
+
+/* ================= FOLHA PAUTADA ================= */
+
+.button-wall {
+  position: absolute;
+  left: 50%;
+  bottom: -300px;
+  transform: translateX(-50%);
+  z-index: 0;
+  filter: drop-shadow(2px 3px 3px rgba(0,0,0,0.2));
+}
+
+.sheet {
+  position: relative;
+  display: inline-block;
+}
+
+.button-bg {
+  display: block;
+  width: 350px;
+}
+
+/* GRID 2 POR LINHA */
+
+.buttons {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: repeat(2, 88px);
+  gap: 2px 2px;
+  width: 182px;
+  justify-content: center;
+  z-index: 1;
+}
+
+.buttons img {
+  width: 88px;
+  height: 31px;
+  border: 1px solid #000;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.buttons img:hover {
+  transform: scale(1.05);
+}
+
+/* ================= RESPONSIVO ================= */
+
+@media (max-width: 768px) {
+
+  .menu {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .postit,
+  .postit-left,
+  .button-wall {
+    position: static;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    transform: none;
+  }
+
+  .postit img,
+  .postit-left img {
+    width: 200px;
+  }
+
+  .button-bg {
+    width: 90%;
+  }
+
+  .buttons {
+    position: relative;
+    top: auto;
+    transform: none;
+    grid-template-columns: repeat(2, 70px);
+    gap: 2px 2px;
+    width: auto;
+  }
+
+  .buttons img {
+    width: 70px;
+    height: 25px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="page-title">
+    <img src="titles/t-index.png" alt="sqr's portfolio">
+  </div>
+
+  <div class="menu">
+    <a href="desenhos.html"><img src="button/btn-desenho.png" alt=""></a>
+    <a href="textos.html"><img src="button/btn-texto.png" alt=""></a>
+    <a href="books.html"><img src="button/btn-leituras.png" alt=""></a>
+    <a href="playlists.html"><img src="button/btn-musicas.png" alt=""></a>
+    <a href="redes.html"><img src="button/btn-redes.png" alt=""></a>
+    <a href="about.html"><img src="button/btn-sobre.png" alt=""></a>
+  </div>
+
+  <p>
+    meu nome é joão pedro<br>
+    estudante de direito e artista pretensioso<br>
+    no momento tenho 10 piercings e 2 tatuagens<br>
+    clique nos botões para se navegar...
+  </p>
+
+  <div class="postit-left">
+    <img src="gifs/postitalt.png" alt="">
+  </div>
+
+  <div class="postit">
+    <img src="gifs/sqrtiny.png" alt="">
+  </div>
+
+  <div class="center-gif">
+    <img src="gifs/sqr.gif" alt="sqr gif">
+  </div>
+
+  <p>© 2007</p>
+
+  <div class="button-wall">
+    <div class="sheet">
+      <img src="gifs/coolwebsites3.png" class="button-bg" alt="">
+
+      <div class="buttons">
+  
+        <!-- Meu botão -->
+        <a href="#" onclick="navigator.clipboard.writeText
+        (`<a href='https://sqrsux.neocities.org' target='_blank'><img src='https://sqrsux.neocities.org/button/sqrbutton.gif'> </a>`)
+        .then(() => alert('código do botão copiado!')); return false;">
+          <img src="button/sqrbutton.gif" alt="">
+        </a>
+
+        <a href="https://falaalgumacoisajeff.neocities.org" target="_blank">
+          <img src="https://falaalgumacoisajeff.neocities.org/imagens/button.png" alt="">
+        </a>
+
+        <a href="https://berbardo.neocities.org/index.html" target="_blank">
+          <img src="/button/bernardo.png" alt="Bernardo">
+        </a>
+
+        <a href="https://pombogay.neocities.org" target="_blank">
+          <img src="https://pombogay.neocities.org/imagens/button-pombogay2.gif" alt="pombogay">
+        </a>
+
+        <a href="https://dorival.neocities.org" target="_blank">
+          <img src="https://dorival.neocities.org/img/dorival-button.gif" alt="Dorival">
+        </a>
+
+        <a href="https://edhmr.neocities.org/" target="_blank">
+          <img src="https://edhmr.neocities.org/PAGINA%20INICIAL/edhmr_botton.gif" alt="edhmr">
+        </a>
+
+        <a href="https://vinizinho.net/" target="_blank">
+          <img src="https://vinizinho.net/figures/button_1.png" alt="">
+        </a>
+
+        <a href="https://dudalog.neocities.org" target="_blank">
+          <img src="https://dudalog.neocities.org/_astro/dudalog-button-main.CCn_KaWI.png" alt="dudalog">
+        </a>
+
+        <a href="https://pixeliana.neocities.org/" target="_blank">
+          <img src="https://pixeliana.neocities.org/mine/pixelianabutton.gif" alt="">
+        </a>
+
+        <a href="https://pkarts.neocities.org" target="_blank">
+          <img src="https://pkarts.neocities.org/botao.gif" alt="">
+        </a>
+        
+        <a href="https://dudaeletrohits.neocities.org" target="_blank">
+          <img src="https://dudaeletrohits.neocities.org/imagens/imagens-index/mybutton.webp" alt="">
+        </a>
+        
+        <a href="https://sophwings42.neocities.org" target="_blank">
+          <img src="https://sophwings42.neocities.org/img/buttons/sophwings42s-button.png" alt="sophwings">
+        </a>
+        
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

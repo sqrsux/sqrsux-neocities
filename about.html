@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>about sqr</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* MENU */
+    .menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: nowrap;
+    }
+
+    .menu a {
+      flex: 0 0 auto;
+    }
+
+    .menu img {
+      height: 44px;
+    }
+
+    /* DUAS COLUNAS */
+    .about {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 30px;
+      align-items: start;
+    }
+
+    .about img {
+      width: 300px;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .about-text {
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    .about-text p {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="page-title">
+      <img src="titles/t-about.png" alt="about">
+    </div>
+
+    <!-- MENU -->
+    <div class="menu">
+      <a href="home.html"><img src="button/btn-casa.png"></a>
+      <a href="desenhos.html"><img src="button/btn-desenho.png"></a>
+      <a href="textos.html"><img src="button/btn-texto.png"></a>
+      <a href="books.html"><img src="button/btn-leituras.png"></a>
+      <a href="playlists.html"><img src="button/btn-musicas.png"></a>
+      <a href="redes.html"><img src="button/btn-redes.png"></a>
+    </div>
+
+    <div class="about">
+      <div class="about-images">
+        <img src="about/sqredit.jpg" alt="sqr">
+        <img src="about/cutesqranimation.gif" alt="cutesqr">
+      </div>
+
+      <div class="about-text">
+        <p>
+          sobre mim<br>
+          seja bem-vindo ao meu site! fico muito grato com sua presença. fiz um site pois não acredito que redes sociais confortam tudo o que tenho em mente, e não acho que vai neste site, mas aqui me exponho mais. eu não sou importante nem filho de alguém importante, este site é um pouco de tudo sobre um zé ninguém. nasci em 24/12/2007 em são paulo. desde pequeno (infelizmente) fui muito conexo à cultura da internet; jogos em flash, animações pertubadoras, vídeos de gente morrendo... bons tempos! é realmente uma bênção eu não ter me tornado um lolcow ou algo do tipo. também sempre tive essa conexão à arte em si, da qual muitas vezes tentei torna-lá em meu ganha-pão, o que infelizmente não deu certo. agora faço arte simplesmente por amor. não consigo definir algo dum meio de entretenimento que seja meu favorito, pois estou em constante mudança, e é basicamente nisto que sou feito;<br>
+            constante mudança.<br>
+            o site é feio? sim! é essa a idéia, filho da puta!<br>
+        </p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* REMOVE FOCO / PONTINHO AZUL DOS LINKS */
+a {
+  outline: none !important;
+  text-decoration: none;
+}
+
+a:focus,
+a:active,
+a:focus-visible {
+  outline: none !important;
+}
+
+/* IMAGENS SEM BORDA */
+img {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  display: block;
+}
+
+/* FUNDO */
+body {
+  background-color: #e6e6e6;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+}
+
+/* CONTAINER (PAPEL) */
+.container {
+  width: 720px;
+  margin: 50px auto;
+  padding: 50px;
+  background-color: #FFFFFF;
+}
+
+/* TÍTULO COMO IMAGEM */
+.page-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.page-title img {
+  display: block;
+  margin: 0 auto;
+  max-width: 95%;
+}
+
+/* ================= MENU ================= */
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* permite adicionar mais botões sem quebrar */
+  gap: 6px;
+}
+
+.menu a {
+  display: inline-block;
+  margin: 3px;
+  vertical-align: middle;
+}
+
+.menu img {
+  height: 45px;
+  width: auto;
+  display: inline-block;
+}
+
+.menu a img:hover {
+  transform: scale(1.2);
+}
+
+/* ================= PLAYLISTS ================= */
+.playlist-section a {
+  display: inline-block;
+}
+
+.playlist-section img {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+.playlist-section img:hover {
+  transform: scale(1.2);
+}
+
+/* ================= REDES SOCIAIS ================= */
+.social-links a {
+  display: inline-block;
+}
+
+.social-links img {
+  width: 120px;
+  height: 120px;
+  display: inline-block;
+}
+
+.social-links img:hover {
+  transform: scale(1.2);
+}
+
+/* ================= TEXTO ================= */
+.container p {
+  text-align: center;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.container a {
+  color: #1a4fff;
+  font-weight: bold;
+}
+
+/* ================= FOOTER GIF ================= */
+.footer-gif {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer-gif img {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+
