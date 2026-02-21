@@ -6,14 +6,14 @@
 <link rel="stylesheet" href="style.css">
 
 <style>
-body{margin:0;font-family:monospace;background:#eee}
+body{margin:0;font-family:Arial,sans-serif;background:#eee}
 .container{max-width:900px;margin:auto;padding:20px}
 
 .menu{display:flex;justify-content:center;align-items:center;gap:6px;flex-wrap:nowrap}
 .menu img{height:44px}
 
 /* HUB */
-#hub h2{font-family:Arial,sans-serif;font-size:30px}
+#hub h2{font-size:30px}
 #hub a{display:block;margin:14px 0;font-size:20px}
 
 /* PÁGINAS */
@@ -21,14 +21,21 @@ body{margin:0;font-family:monospace;background:#eee}
 .p:target{display:flex}
 .p:target~.container{display:none}
 
-/* FOLHA */
-.f{
-width:90%;max-width:700px;padding:60px;
-background:repeating-linear-gradient(#fff,#fff 32px,#cce 33px);
-border-left:4px solid red;
-line-height:32px;
+/* TEXTO */
+.texto{
+width:90%;max-width:700px;
 font-size:18px;
-box-shadow:0 0 15px #0003
+line-height:1.6;
+background:white;
+padding:40px;
+box-shadow:0 0 15px #0002
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+margin-top:40px;
+padding:20px;
 }
 </style>
 </head>
@@ -37,7 +44,7 @@ box-shadow:0 0 15px #0003
 
 <!-- TEXTO 1 -->
 <section id="t1" class="p">
-<div class="f">
+<div class="texto">
 <a href="#">← voltar</a>
 <h2>origem do sqrsux</h2>
 <p>
@@ -48,7 +55,7 @@ meu sobrenome, siqueira -> remova as vogais -> sqr -> sucks de forma informal (l
 
 <!-- TEXTO 2 -->
 <section id="t2" class="p">
-<div class="f">
+<div class="texto">
 <a href="#">← voltar</a>
 <h2>entrada A 31/12/2025</h2>
 <p>
@@ -59,7 +66,7 @@ incessantemente o ser busca o ponto em sua existência, não necessariamente de 
 
 <!-- TEXTO 3 -->
 <section id="t3" class="p">
-<div class="f">
+<div class="texto">
 <a href="#">← voltar</a>
 <h2>entrada 03/01/2026</h2>
 <p>
@@ -87,6 +94,10 @@ não tem segredo pro sucesso, já que ele não é linear e/ou constante. sucesso
 <a href="#t1">origem do sqrsux</a>
 <a href="#t2">entrada A 31/12/2025</a>
 <a href="#t3">entrada 03/01/2026</a>
+
+<footer>
+<img src="footer.gif" alt="footer gif">
+</footer>
 
 </div>
 
