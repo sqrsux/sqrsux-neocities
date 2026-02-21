@@ -2,39 +2,59 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>sqr's texts</title>
-<link rel="stylesheet" href="style.css">
 
 <style>
-body{margin:0;font-family:Arial,sans-serif;background:#eee}
-.container{max-width:900px;margin:auto;padding:20px}
+body{
+  margin:0;
+  padding:20px;
+  background:#ffffff;
+  text-align:center;
+  font-family:Arial,sans-serif;
+}
 
-.menu{display:flex;justify-content:center;align-items:center;gap:6px;flex-wrap:nowrap}
-.menu img{height:44px}
+h1{
+  font-size:clamp(1.5rem,5vw,2.5rem);
+  margin:10px 0;
+}
 
-/* HUB */
-#hub h2{font-size:30px}
-#hub a{display:block;margin:14px 0;font-size:20px}
+h2{
+  font-size:clamp(1rem,4vw,1.5rem);
+  margin:10px 0;
+}
+
+h3{
+  font-weight:normal;
+  font-size:1.17em;
+  margin:10px 0;
+}
+
+a{
+  font-size:1.17em;
+  color:#0000EE;
+  text-decoration:underline;
+}
+
+a:visited{color:#551A8B;}
+a:hover{color:#FF0000;}
 
 /* PÁGINAS */
-.p{display:none;min-height:100vh;justify-content:center;align-items:center}
+.p{display:none;min-height:100vh;justify-content:center;align-items:center;flex-direction:column}
 .p:target{display:flex}
-.p:target~.container{display:none}
+.p:target~#hub{display:none}
 
 /* TEXTO */
 .texto{
-width:90%;max-width:700px;
-font-size:18px;
-line-height:1.6;
-background:white;
-padding:40px;
-box-shadow:0 0 15px #0002
+  max-width:700px;
+  margin:auto;
+  font-size:1.17em;
+  line-height:1.6;
 }
 
 /* FOOTER (só textos) */
-.texto footer{
-text-align:center;
-margin-top:40px;
+footer{
+  margin-top:40px;
 }
 </style>
 </head>
@@ -49,11 +69,9 @@ margin-top:40px;
 <p>
 meu sobrenome, siqueira -> remova as vogais -> sqr -> sucks de forma informal (leetspeak) -> sux -> sqrsux
 </p>
-
 <footer>
-<img src="footer.gif" alt="footer gif">
+<img src="gifs/sqr.gif" alt=" ">
 </footer>
-
 </div>
 </section>
 
@@ -63,13 +81,11 @@ meu sobrenome, siqueira -> remova as vogais -> sqr -> sucks de forma informal (l
 <a href="#">← voltar</a>
 <h2>entrada A 31/12/2025</h2>
 <p>
-incessantemente o ser busca o ponto em sua existência...
+incessantemente o ser busca o ponto em sua existência, não necessariamente de uma forma melancólica ou depressiva, mas sim como um modo de compreender o que têm de ser feito para alcançar a morte de forma satisfatória. o que ele não percebe é que seu motivo na terra é justamente buscar seu motivo. compreender o mundo e o que vive nele é muito perto de impossível; e esse é o ponto, afinal. não saber de tudo é o que faz o humano gente de verdade, o que o deixa numa balança que nunca estabiliza, sempre oscilando entre certezas provisórias e dúvidas inevitáveis. é isso que faz o ser, ser.
 </p>
-
 <footer>
-<img src="footer.gif" alt="footer gif">
+<img src="gifs/sqr.gif" alt=" ">
 </footer>
-
 </div>
 </section>
 
@@ -79,34 +95,22 @@ incessantemente o ser busca o ponto em sua existência...
 <a href="#">← voltar</a>
 <h2>entrada 03/01/2026</h2>
 <p>
-não tem segredo pro sucesso...
+não tem segredo pro sucesso, já que ele não é linear e/ou constante. sucesso é gostar do que faz e ser grato pelo o que vier.
 </p>
-
 <footer>
-<img src="footer.gif" alt="footer gif">
+<img src="gifs/sqr.gif" alt=" ">
 </footer>
-
 </div>
 </section>
 
-<div class="container" id="hub">
-
-<div class="page-title">
-<img src="titles/t-texts.png" alt="sqr's texts">
-</div>
-
-<div class="menu">
-<a href="home.html"><img src="button/btn-casa.png"></a>
-<a href="desenhos.html"><img src="button/btn-desenho.png"></a>
-<a href="books.html"><img src="button/btn-leituras.png"></a>
-<a href="playlists.html"><img src="button/btn-musicas.png"></a>
-<a href="redes.html"><img src="button/btn-redes.png"></a>
-<a href="about.html"><img src="button/btn-sobre.png"></a>
-</div>
+<!-- HUB -->
+<div id="hub">
+<h1>sqr's texts</h1>
 
 <h2>textos</h2>
-<a href="#t1">origem do sqrsux</a>
-<a href="#t2">entrada A 31/12/2025</a>
+
+<a href="#t1">origem do sqrsux</a><br><br>
+<a href="#t2">entrada A 31/12/2025</a><br><br>
 <a href="#t3">entrada 03/01/2026</a>
 
 </div>
