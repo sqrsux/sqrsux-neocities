@@ -1,0 +1,22 @@
+<!--Livro X-->
+
+<section id="lX" class="p">
+<div class="texto">
+<a href="#">voltar</a>
+
+<img src="livros/NOMELIVRO.jpg">
+
+<h2>NOME LIVRO</h2>
+
+<p>
+AUTOR, ANO<br>
+lido em MM/AAAA<br><br>
+SOBRE O LIVRO
+</p>
+
+</div>
+</section>
+
+--------------------------------
+
+<a href="#lX">NOME LIVRO - SOBRENOME, Nome (ANO)</a><br><br>

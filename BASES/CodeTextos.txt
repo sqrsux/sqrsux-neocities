@@ -1,0 +1,20 @@
+<!--Texto X -->
+
+<section id="tX" class="p">
+<div class="texto">
+<a href="#">voltar</a>
+<h2>TITULO ENTRADA (DD/MM/AAAA)</h2>
+<p>
+TEXTO
+</p>
+
+<div class="center-gif">
+  <img src="gifs/sqr.gif" alt="sqr gif">
+</div>
+
+</div>
+</section>
+
+------------------------------------------
+
+<a href="#tX">TITULO ENTRADA (DD/MM/AAAA)</a><br><br>

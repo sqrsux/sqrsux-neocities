@@ -1,119 +1,339 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>sqr's drawings</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>sqr's drawings</title>
+<link rel="stylesheet" href="style.css">
 
-  <style>
-    /* MENU — UMA LINHA, BOTÕES MAIORES */
-    .menu {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 6px;
-      flex-wrap: nowrap; /* NÃO quebra linha */
-    }
+<style>
 
-    .menu a {
-      flex: 0 0 auto;
-    }
+/* MENU */
+.menu{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:6px;
+  flex-wrap:nowrap;
+}
+.menu img{
+  height:44px;
+}
 
-    .menu img {
-      height: 44px; /* botões maiores */
-    }
+/* CONTROLE DAS PÁGINAS */
+.p{
+  display:none;
+  min-height:100vh;
+  padding:60px 0;
+}
+.p:target{
+  display:block;
+}
+.p:target ~ .container{
+  display:none;
+}
 
-    /* GALERIA EM 2 COLUNAS */
-    .desenhos {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      justify-items: center;
-    }
+/* CONTAINER DO DESENHO */
+.p .texto{
+  width:90%;
+  max-width:900px;
+  margin:0 auto;
+  padding:50px;
 
-    .desenhos img {
-      width: 300px;
-      aspect-ratio: 3 / 4;
-      object-fit: cover;
-    }
-  </style>
+  background:#ffffff;
+  border:none;
+  outline:none;
+  box-shadow:none;
+
+  font-family:Arial, sans-serif;
+  font-size:20px;
+  line-height:1.7;
+  text-align:center;
+}
+
+/* IMAGEM */
+.p .texto img{
+  width:300px;
+  aspect-ratio:3/4;
+  object-fit:cover;
+  display:block;
+  margin:0 auto 20px auto;
+}
+
+/* HUB */
+.container .texto{
+  font-family:Arial, sans-serif;
+  font-size:20px;
+  text-align:left;
+}
+
+</style>
 </head>
 
 <body>
-  <div class="container">
 
-    <!-- TÍTULO COMO IMAGEM -->
-    <div class="page-title">
-      <img src="titles/t-desenhos.png" alt="sqr's drawings">
-    </div>
 
-    <!-- MENU -->
-    <div class="menu">
-      <a href="home.html"><img src="button/btn-casa.png"></a>
-      <a href="textos.html"><img src="button/btn-texto.png"></a>
-      <a href="books.html"><img src="button/btn-leituras.png"></a>
-      <a href="playlists.html"><img src="button/btn-musicas.png"></a>
-      <a href="redes.html"><img src="button/btn-redes.png"></a>
-      <a href="about.html"><img src="button/btn-sobre.png"></a>
-    </div>
-    
-    <!--LEMBRE DE FORMATAR A IMAGEM EM 4 POR 3 E COMPRESSÁ-LÁ!-->
-    <!--TEXTOS VÃO DIRETAMENTE APÓS A IMAGEM!-->
+<!--Desenho 1-->
 
-    <div class="desenhos">
-      <img src="desenhos/braains.png">
-      <p>braains. (12/2025) <br> 
-      simplesmente um zumbi. fiz como teste para o caderno e para meus lápis.</p>
-      
-      <img src="desenhos/gotmilk.png">
-      <p>got milk? (01/2026)<br>
-      inspirado num antigo infomercial americano influenciando as crianças à tomarem leite, mostrando geralmente um personagem ficando forte, exatamente como eu fiz.</p>
-      
-      <img src="desenhos/pieropiccioni.png">
-      <p>piero piccioni. (11/2025)<br>
-      retrato estilizado do maestro italiano piero piccioni, falecido em 2004, que fez inúmeras soundtracks para filmes dos anos 70, muitas das quais eu amo muito. a minha preferida dele é "mexican dream", de 1970. acredito que esta foto (agora desenho) dele retrata perfeitamente a exaustão que existe na criatividade.</p>
-      
-      <img src="desenhos/sqrcuspe.png">
-      <p>sqrcuspe. (01/2026)<br>
-      outro teste pro caderno e treino de anatomia, sendo uma paródia dum desenho do bob cuspe, do agora aposentado cartunista angeli, que trabalhou com A laerte e inúmeros outros na revista chiclete com banana. descanse angeli, você merece! também inclui uma tirada pro nikolas ferreira, pois genuinamente quero ele morto.</p>
-      
-      <img src="desenhos/sqrfreeman.png">
-      <p>sqrfreeman. (01/2026)<br>
-      paródia de uma artwork de uma das minhas franquias favoritas, half-life. "unforeseen consequences" é o nome do primeiro capítulo do primeiro jogo.</p>
+<section id="d1" class="p">
+<div class="texto">
+<a href="#">voltar</a>
 
-      <img src="desenhos/sqrportrait.png">
-      <p>sqrportrait. (01/2026)<br>
-      autorretrato.</p>
-      
-      <img src="desenhos/sqrsideprofile.png">
-      <p>sqrsideprofile. (01/2026)<br>
-      desenho rápido para treino de perfil.</p>
-      
-      <img src="desenhos/srwilsonbysqr.jpg">
-      <p>srwilsonbysqr. (01/2026)<br>
-      desenho do sr. wilson do colônia contra ataca, canal do youtube do qual eu assisto desde 2015 e cara do qual eu admiro muito.</p>
-       
-      <img src="desenhos/cutesqrbase.jpg">
-      <p>cutesqr. (01/2026)<br>
-      desenho bobinho da aba about, que agora é mini animado (dá uma olhada!)</p>
-        
-      <img src="desenhos/sqrsmind.jpg">
-      <p>sqr's mind. (01/2026)<br>
-      ilustrando os emaranhados de fios da minha mente...</p>
-      
-      <img src="desenhos/cariño.jpg">
-      <p>cariño. (01/2026)<br>
-      desenho estilo pin-up que fiz de estudo pra anatomia feminina.</p>
-      
-     <img src="desenhos/kaboom.jpg">
-      <p>kaboom. (02/2026)<br>
-       desenho pra ver se eu tinha perdido o jeito.</p>
-       
-      <img src="desenhos/thedualityofsqr.jpg">
-      <p>the duality of sqr. (02/2026)<br>
-       os dois sqrs que viveram este ano.</p>
-    </div>
+<img src="desenhos/braains.png">
+<h2>braains</h2>
+<h3>(12/2025)</h3>
 
+<p>
+simplesmente um zumbi. fiz como teste para o caderno e para meus lápis.
+</p>
+</div>
+</section>
+
+<!--Desenho 2-->
+
+<section id="d2" class="p">
+<div class="texto">
+<a href="#">voltar</a>
+
+<img src="desenhos/gotmilk.png">
+<h2>gotmilk?</h2>
+<h3>01/2026</h3>
+
+<p>
+inspirado num antigo infomercial americano influenciando as crianças à tomarem leite, mostrando geralmente um personagem ficando forte, exatamente como eu fiz.
+</p>
+
+</div>
+</section>
+
+<!--Desenho 3-->
+
+<section id="d3" class="p">
+<div class="texto">
+<a href="#">voltar</a>
+
+<img src="desenhos/pieropiccioni.png">
+<h2>pieropiccioni</h2>
+<h3>(11/2025)</h3>
+
+<p>
+retrato estilizado do maestro italiano piero piccioni, falecido em 2004, que fez inúmeras soundtracks para filmes dos anos 70, muitas das quais eu amo muito. a minha preferida dele é "mexican dream", de 1970. acredito que esta foto (agora desenho) dele retrata perfeitamente a exaustão que existe na criatividade.
+</p>
+
+</div>
+</section>
+
+<!--Desenho 4-->
+
+<section id="d4" class="p">
+<div class="texto">
+<a href="#">voltar</a>
+
+<img src="desenhos/sqrcuspe.png">
+<h2>sqrcuspe</h2>
+<h3>(01/2026)</h3>
+
+<p>
+ outro teste pro caderno e treino de anatomia, sendo uma paródia dum desenho do bob cuspe, do agora aposentado cartunista angeli, que trabalhou com A laerte e inúmeros outros na revista chiclete com banana. descanse angeli, você merece! também inclui uma tirada pro nikolas ferreira, pois genuinamente quero ele morto.
+</p>
+
+</div>
+</section>
+
+<!--Desenho 5-->
+
+<section id="d5" class="p">
+<div class="texto">
+<a href="#">voltar</a>
+
+<img src="desenhos/sqrfreeman.png">
+<h2>sqrfreeman</h2>
+<h3>(01/2026)</h3>
+
+<p>
+paródia de uma artwork de uma das minhas franquias favoritas, half-life. "unforeseen consequences" é o nome do primeiro capítulo do primeiro jogo.
+</p>
+
+</div>
+</section>
+
+<!--Desenho 6-->
+
+<section id="d6" class="p">
+<div class="texto">
+<a href="#">voltar</a>
+
+<img src="desenhos/sqrportrait.png">
+<h2>sqrportrait</h2>
+<h3>(01/2026)</h3>
+
+<p>
+autorretrato.
+</p>
+
+</div>
+</section>
+
+<!--Desenho 7-->
+
+<section id="d7" class="p">
+<div class="texto">
+<a href="#">voltar</a>
+
+<img src="desenhos/sqrsideprofile.png">
+<h2>sqrsideprofile</h2>
+<h3>(01/2026)</h3>
+
+<p>
+desenho rápido para treino de perfil.
+</p>
+
+</div>
+</section>
+
+<!--Desenho 8-->
+
+<section id="d8" class="p">
+<div class="texto">
+<a href="#">voltar</a>
+
+<img src="desenhos/srwilsonbysqr.jpg">
+<h2>srwilsonbysqr</h2>
+<h3>(01/2026)</h3>
+
+<p>
+desenho do sr. wilson do colônia contra ataca, canal do youtube do qual eu assisto desde 2015 e cara do qual eu admiro muito.
+</p>
+
+</div>
+</section>
+
+<!--Desenho 9-->
+
+<section id="d9" class="p">
+<div class="texto">
+<a href="#">voltar</a>
+
+<img src="desenhos/cutesqrbase.jpg">
+<h2>cutesqrbase</h2>
+<h3>(01/2026)</h3>
+
+<p>
+desenho bobinho da aba about, que agora é mini animado (dá uma olhada!)
+</p>
+
+</div>
+</section>
+
+<!--Desenho 10-->
+
+<section id="d10" class="p">
+<div class="texto">
+<a href="#">voltar</a>
+
+<img src="desenhos/sqrsmind.jpg">
+<h2>sqrsmind</h2>
+<h3>(01/2026)</h3>
+
+<p>
+ilustrando os emaranhados de fios da minha mente...
+</p>
+
+</div>
+</section>
+
+<!--Desenho 11-->
+
+<section id="d11" class="p">
+<div class="texto">
+<a href="#">voltar</a>
+
+<img src="desenhos/cariño.jpg">
+<h2>cariño</h2>
+<h3>(01/2026)</h3>
+
+<p>
+desenho estilo pin-up que fiz de estudo pra anatomia feminina.
+</p>
+
+</div>
+</section>
+
+<!--Desenho 12-->
+
+<section id="d12" class="p">
+<div class="texto">
+<a href="#">voltar</a>
+
+<img src="desenhos/kaboom.jpg">
+<h2>kaboom</h2>
+<h3>(02/2026)</h3>
+
+<p>
+desenho pra ver se eu tinha perdido o jeito.
+</p>
+
+</div>
+</section>
+
+<!--Desenho 13-->
+
+<section id="d13" class="p">
+<div class="texto">
+<a href="#">voltar</a>
+
+<img src="desenhos/thedualityofsqr.jpg">
+<h2>thedualityofsqr</h2>
+<h3>(02/2026)</h3>
+
+<p>
+os dois sqrs que viveram este ano.
+</p>
+
+</div>
+</section>
+
+<!--Fim dos Desenhos-->
+<!--LEMBRE DE FORMATAR A IMAGEM EM 4 POR 3, . JPG, E COMPRESSÁ-LÁ!-->
+
+<!-- HUB -->
+<div class="container">
+
+  <div class="page-title">
+    <img src="titles/t-desenhos.png" alt="sqr's drawings">
   </div>
+
+  <div class="menu">
+    <a href="home.html"><img src="button/btn-casa.png"></a>
+    <a href="textos.html"><img src="button/btn-texto.png"></a>
+    <a href="books.html"><img src="button/btn-leituras.png"></a>
+    <a href="playlists.html"><img src="button/btn-musicas.png"></a>
+    <a href="redes.html"><img src="button/btn-redes.png"></a>
+    <a href="about.html"><img src="button/btn-sobre.png"></a>
+  </div>
+
+  <br><br>
+
+<!--Links-->
+
+  <div class="texto">
+    <a href="#d1">braains (12/2025)</a><br><br>
+    <a href="#d2">got milk? (01/2026)</a><br><br>
+    <a href="#d3">piero piccioni (11/2025)</a><br><br>
+    <a href="#d4">sqrcuspe (01/2026)</a><br><br>
+    <a href="#d5">sqrfreeman (01/2026)</a><br><br>
+    <a href="#d6">sqrportrait (01/2026)</a><br><br> 
+    <a href="#d7">sqrsideprofile (01/2026)</a><br><br>
+    <a href="#d8">srwilsonbysqr (01/2026)</a><br><br>
+    <a href="#d9">cutesqrbase (01/2026)</a><br><br>
+    <a href="#d10">sqrsmind (01/2026)</a><br><br>
+    <a href="#d11">cariño (01/2026)</a><br><br>
+    <a href="#d12">kaboom (02/2026)</a><br><br>
+    <a href="#d13">thedualityofsqr (02/2026)</a><br><br>
+  </div>
+
+<!--Fim dos links-->
+
+</div>
+
 </body>
 </html>

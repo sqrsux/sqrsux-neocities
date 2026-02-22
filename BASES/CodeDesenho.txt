@@ -1,0 +1,20 @@
+<!--Desenho X-->
+
+<section id="dX" class="p">
+<div class="texto">
+<a href="#">voltar</a>
+
+<img src="desenhos/NOMEDOARQUIVO.jpg">
+<h2>NOME DO DESENHO</h2>
+<h3>(MM/AAAA)</h3>
+
+<p>
+SOBRE O DESENHO
+</p>
+
+</div>
+</section>
+
+--------------------------------------------------------
+
+<a href="#dX">NOME DO DESENHO (MM/AAAA)</a><br><br>

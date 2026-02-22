@@ -1,105 +1,232 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>sqr's readings</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>sqr's readings</title>
+<link rel="stylesheet" href="style.css">
 
-  <style>
-     .menu {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 6px;
-      flex-wrap: nowrap;
-    }
+<style>
 
-    .menu a {
-      flex: 0 0 auto;
-    }
+/* MENU */
+.menu{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:6px;
+  flex-wrap:nowrap;
+}
+.menu img{
+  height:44px;
+}
 
-    .menu img {
-      height: 44px;
-    }
-    /* GALERIA DE LIVROS */
-    .livros {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      justify-items: center;
-    }
+/* CONTROLE DAS PÁGINAS */
+.p{
+  display:none;
+  min-height:100vh;
+  padding:60px 0;
+}
+.p:target{
+  display:block;
+}
+.p:target ~ .container{
+  display:none;
+}
 
-    .livros img {
-      width: 300px;
-      aspect-ratio: 3 / 4;
-      object-fit: cover;
-    }
+/* CONTAINER DO TEXTO */
+.p .texto{
+  width:90%;
+  max-width:900px;
+  margin:0 auto;
+  padding:50px;
 
-    .livros p {
-      max-width: 300px;
-    }
-  </style>
+  background:#ffffff;
+  border:none;
+  outline:none;
+  box-shadow:none;
+
+  font-family:Arial, sans-serif;
+  font-size:20px;
+  line-height:1.7;
+  text-align:center; /* CENTRALIZADO */
+}
+
+/* IMAGEM DO LIVRO */
+.p .texto img{
+  width:300px;
+  display:block;
+  margin:0 auto 20px auto;
+}
+
+/* TÍTULO */
+.p .texto h2{
+  margin-bottom:20px;
+}
+
+/* HUB */
+.container .texto{
+  font-family:Arial, sans-serif;
+  font-size:20px;
+  text-align:left;
+}
+
+</style>
 </head>
 
 <body>
-  <div class="container">
 
-    <!-- TÍTULO -->
-    <div class="page-title">
-      <img src="titles/t-leituras.png" alt="sqr's readings">
-    </div>
+<!--Livro 1-->
+<section id="l1" class="p">
+<div class="texto">
+<a href="#">voltar</a>
 
-    <!-- MENU -->
-    <div class="menu">
-      <a href="home.html"><img src="button/btn-casa.png"></a>
-      <a href="desenhos.html"><img src="button/btn-desenho.png"></a>
-      <a href="textos.html"><img src="button/btn-texto.png"></a>
-      <a href="playlists.html"><img src="button/btn-musicas.png"></a>
-      <a href="redes.html"><img src="button/btn-redes.png"></a>
-      <a href="about.html"><img src="button/btn-sobre.png"></a>
-    </div>
+<img src="livros/maus.jpg">
 
-    <!-- LIVROS -->
-    <div class="livros">
+<h2>Maus</h2>
 
-      <img src="livros/maus.jpg">
-      <p>
-      Maus<br> 
-      Art Spielgelman <br> 
-      (1991, lido em 01/2026)<br>
-      excelente leitura histórica densa, retrata em quadrinhos uma relação de art spielgelman com seu pai vladek, sobrevivente do holocausto, e como foi para ele sobreviver com sua esposa anja naquele cenário. só queria que art fosse menos cuzão com seu pai, e acho que ele tbm.
-      </p>
+<p>
+Art Spiegelman, 1991<br>
+lido em 01/2026<br><br>
+excelente leitura histórica densa, retrata em quadrinhos uma relação de art spielgelman com seu pai vladek, sobrevivente do holocausto, e como foi para ele sobreviver com sua esposa anja naquele cenário. só queria que art fosse menos cuzão com seu pai, e acho que ele tbm.
+</p>
 
-      <img src="livros/racionais.jpg">
-      <p>
-        Sobrevivendo no inferno<br>
-        Racionais MC's<br>
-        (2018, lido em 01/2026)<br>
-        livro homônimo ao álbum, que conta a história dele, um pouco da história dos racionais mc's, e sua importância para a cultura e sociedade contemporânea brasileira. leitura obrigatória para entender o contexto em que o álbum foi inserido, e para entender como ele tem sido uma arma enorme para combater o preconceito.
-      </p>
+</div>
+</section>
 
-      <img src="livros/seconds.jpg">
-      <p>
-        Seconds<br>
-        Bryan Lee O'Malley<br>
-        (2014, lido em 01/2026)<br>
-       leitura bem fácil, escrita e desenhada pelo mesmo autor de scott pilgrim. li em inglês. fala sobre katie, dona do restaurante seconds, que encontra cogumelos mágicos que alteram a realidade... fala sobre o controle que temos em certas coisas da vida, e falta dele em outras.
-      </p>
-      <img src="livros/tododiaamesmanoite.jpg">  
-      <p>
-      Todo dia a mesma noite<br>
-      Daniela Arbex<br>
-      (2018, lido em 02/2026)<br>
-      sinto que não possuo experiência suficiente no que chamamos de vida para comentar sobre a perda, já que a única perda que tive foi a do meu avô paterno em 2013, apenas me lembro de sucintos momentos de choro quando eu era menor. comento esse fato da perda pois daniela arbex excelentemente, ao menos tenta passar ao leitor o sentimento de perda que pais, mães, inúmeros familiares, o brasil e o mundo sentiu nos dias posteriores a 27 de janeiro de 2013, onde em santa maria no rio grande do sul ocorrera o incêndio na boate kiss, que ceifou 242 jovens vidas e feriu 600 outras. difícil eu resenhar sobre este livro pois acredito que nunca tive o sentimento de perda, mas este livro mostra quanto a leitura pode fazer a gente sentir, aprender e rever nossos conceitos. o livro mostra depoimentos de sobreviventes, frentes de socorro às vítimas e dos pais delas. também mostra o quão negligente e absolutamente antipático o humano pode ser; seja com vistorias de segurança mal executadas, críticas miradas aos pais por parte da igreja, processos judiciais intermináveis e coisas que não consigo nem mensurar em palavras. acredito que escrever tanto sobre este livro é o mínimo que eu devo fazer, não que eu tenha algum dever em si, mas muitas pessoas tinham o dever sim de ter evitado este incidente e não o impediram; esta enorme negligência e falta de respeito não irei ter jamais. minhas maiores condolências às famílias.
-      </p>
-       <img src="livros/holocaustobrasileiro.jpg">
-       <p>
-       Holocausto brasileiro<br>
-       Daniela Arbex<br>
-       (2013, lido em 02/2026)<br>
-      outro livro-reportagem da magnífica daniela arbex, que faz um trabalho muito extenso e bem feito ao abordar um tema, no caso este sendo o do hospital colônia de barbacena, em barbacena, minas gerais, que hospedou uns dos maiores ultrajes contra a humanidade ao longo da sua história. o livro contém contos de quem foi "asilado" (o termo mais correto seria raptado) pelo hospital, trabalhadores do local, moradores dos arredores, e relatos de especialistas que visitaram o local. a abolição do hospital colônia de barbacena, sem dúvida, foi ponto de começo para a psicologia contemporânea no brasil, e fecundou o que originaria a dádiva penal, pública e social que é a existência de manicômios. </p>
-    </div>
+<!--Livro 2-->
 
+<section id="l2" class="p">
+<div class="texto">
+<a href="#">voltar</a>
+
+<img src="livros/racionais.jpg">
+
+<h2>Sobrevivendo no inferno</h2>
+
+<p>
+Racionais MC's, 2018<br>
+lido em 01/2026<br><br>
+livro homônimo ao álbum, que conta a história dele, um pouco da história dos racionais mc's, e sua importância para a cultura e sociedade contemporânea brasileira. leitura obrigatória para entender o contexto em que o álbum foi inserido, e para entender como ele tem sido uma arma enorme para combater o preconceito.
+</p>
+
+</div>
+</section>
+
+<!--Livro 3-->
+
+<section id="l3" class="p">
+<div class="texto">
+<a href="#">voltar</a>
+
+<img src="livros/seconds.jpg">
+
+<h2>Seconds</h2>
+
+<p>
+Bryan Lee O'Malley, 2014<br>
+lido em 01/2026<br><br>
+leitura bem fácil, escrita e desenhada pelo mesmo autor de scott pilgrim. li em inglês. fala sobre katie, dona do restaurante seconds, que encontra cogumelos mágicos que alteram a realidade... fala sobre o controle que temos em certas coisas da vida, e falta dele em outras.
+</p>
+
+</div>
+</section>
+
+<!--Livro 4-->
+
+<section id="l4" class="p">
+<div class="texto">
+<a href="#">voltar</a>
+
+<img src="livros/tododiaamesmanoite.jpg">
+
+<h2>Todo dia a mesma noite</h2>
+
+<p>
+Daniela Arbex, 2018<br>
+lido em 02/2026<br><br>
+ sinto que não possuo experiência suficiente no que chamamos de vida para comentar sobre a perda, já que a única perda que tive foi a do meu avô paterno em 2013, apenas me lembro de sucintos momentos de choro quando eu era menor. comento esse fato da perda pois daniela arbex excelentemente, ao menos tenta passar ao leitor o sentimento de perda que pais, mães, inúmeros familiares, o brasil e o mundo sentiu nos dias posteriores a 27 de janeiro de 2013, onde em santa maria no rio grande do sul ocorrera o incêndio na boate kiss, que ceifou 242 jovens vidas e feriu 600 outras. difícil eu resenhar sobre este livro pois acredito que nunca tive o sentimento de perda, mas este livro mostra quanto a leitura pode fazer a gente sentir, aprender e rever nossos conceitos. o livro mostra depoimentos de sobreviventes, frentes de socorro às vítimas e dos pais delas. também mostra o quão negligente e absolutamente antipático o humano pode ser; seja com vistorias de segurança mal executadas, críticas miradas aos pais por parte da igreja, processos judiciais intermináveis e coisas que não consigo nem mensurar em palavras. acredito que escrever tanto sobre este livro é o mínimo que eu devo fazer, não que eu tenha algum dever em si, mas muitas pessoas tinham o dever sim de ter evitado este incidente e não o impediram; esta enorme negligência e falta de respeito não irei ter jamais. minhas maiores condolências às famílias.
+</p>
+
+</div>
+</section>
+
+<!--Livro 5-->
+
+<section id="l5" class="p">
+<div class="texto">
+<a href="#">voltar</a>
+
+<img src="livros/holocaustobrasileiro.jpg">
+
+<h2>Holocausto brasileiro</h2>
+
+<p>
+Daniela Arbex, 2013<br>
+lido em 01/2026<br><br>
+ outro livro-reportagem da magnífica daniela arbex, que faz um trabalho muito extenso e bem feito ao abordar um tema, no caso este sendo o do hospital colônia de barbacena, em barbacena, minas gerais, que hospedou uns dos maiores ultrajes contra a humanidade ao longo da sua história. o livro contém contos de quem foi "asilado" (o termo mais correto seria raptado) pelo hospital, trabalhadores do local, moradores dos arredores, e relatos de especialistas que visitaram o local. a abolição do hospital colônia de barbacena, sem dúvida, foi ponto de começo para a psicologia contemporânea no brasil, e fecundou o que originaria a dádiva penal, pública e social que é a existência de manicômios.
+</p>
+
+</div>
+</section>
+
+<!--Livro 6-->
+
+<section id="l6" class="p">
+<div class="texto">
+<a href="#">voltar</a>
+
+<img src="livros/ocoronelqueraptavainfancias.jpg">
+
+<h2>O coronel que raptava infâncias</h2>
+
+<p>
+Matheus de Moura, 2021<br>
+lido em 02/2026<br><br>
+creio que a linguagem que vou usar desrespeita o tema do livro,
+porém, este livro é do cacete. este livro me fez descobrir meu gênero literário favorito: o jornalismo literário, em que 
+matheus de moura faz um trabalho simplesmente magnífico ao contar sobre os atos asquerosos de pedro chavarry duarte; este sendo
+um coronel da polícia do estado do rio de janeiro. chavarry é megalomaníaco, porém mais importantemente, pedófilo.
+mestre matheus de moura conta sobre a milícia no rio de janeiro, sobre as vítimas, e sobre a doentia mente de chavarry numa linguagem ótima.
+livrasso.
+
+</p>
+
+</div>
+</section>
+
+<!--Fim dos livros-->
+
+<!-- HUB -->
+<div class="container">
+
+  <div class="page-title">
+    <img src="titles/t-leituras.png" alt="sqr's readings">
   </div>
+
+  <div class="menu">
+    <a href="home.html"><img src="button/btn-casa.png"></a>
+    <a href="desenhos.html"><img src="button/btn-desenho.png"></a>
+    <a href="textos.html"><img src="button/btn-texto.png"></a>
+    <a href="playlists.html"><img src="button/btn-musicas.png"></a>
+    <a href="redes.html"><img src="button/btn-redes.png"></a>
+    <a href="about.html"><img src="button/btn-sobre.png"></a>
+  </div>
+
+  <br><br>
+  
+<!-- Links -->
+
+  <div class="texto">
+    <a href="#l1">Maus - SPIELGELMAN, Art (1991)</a><br><br>
+    <a href="#l2">Sobrevivendo no inferno - RACIONAIS MC'S (2018)</a><br><br>
+    <a href="#l3">Seconds - O'MALLEY, Bryan Lee (2014)</a><br><br>
+    <a href="#l4">Todo dia a mesma noite - ARBEX, Daniela (2018)</a><br><br>
+    <a href="#l5">Holocausto brasileiro - ARBEX, Daniela (2013)</a><br><br>
+    <a href="#l6">O coronel que raptava infâncias - DE MOURA, Matheus (2021)</a><br><br>
+  </div>
+  
+<!-- Fim dos Links -->
+
+</div>
+
 </body>
 </html>
